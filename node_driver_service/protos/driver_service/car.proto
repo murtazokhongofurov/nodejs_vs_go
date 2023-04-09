@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package driver_service;
+option go_package="genproto/driver_service";
+import "google/protobuf/empty.proto";
+
+service CarService {
+    rpc Create(CarRequest) returns (CarResponse) {}
+    rpc Update(UpdateCarReq) returns (CarResponse) {}
+    rpc GetById(CarId) returns (CarResponse) {}
+    rpc Delete(CarId) returns (google.protobuf.Empty) {}
+}
+
+message CarRequest {
+    string driver_id = 1;
+    string car_model = 2;
+    string manufacture_year = 3;
+    string number_plate = 4;
+    string technical_licence = 5;
+    string car_type = 6;
+    string car_image = 7;
+    string color = 8;
+}
+
+message CarResponse {
+    string id = 1;
+    string driver_id = 2;
+    string car_model = 3;
+    string manufacture_year = 4;
+    string number_plate = 5;
+    string technical_licence = 6;
+    string car_type = 7;
+    string car_image = 8;
+    string color = 9;
+}
+
+message CarId {
+    string id = 1;
+}
+
+message UpdateCarReq {
+    string id = 1;
+    string car_model = 2;
+    string manufacture_year = 3;
+    string number_plate = 4;
+    string technical_licence = 5;
+    string car_type = 6;
+    string car_image = 7;
+    string color = 8;
+}
