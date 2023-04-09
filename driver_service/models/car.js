@@ -1,27 +1,41 @@
 const mongoose = require("mongoose");
 const {v4} = require("uuid");
 
-const DriverSchema = mongoose.Schema(
+const CarSchema = mongoose.Scema(
     {
         id: {
             type: String,
             default: v4,
             unique: true
         },
-        first_name: {
+        driver_id: {
             type: String,
-            required: [true, "Driver must has name"]
+            unique: true
         },
-        last_name: {
+        car_model: {
             type: String,
             maxlength: 100
         },
-        phone_number: {
-            type: String,
-            maxlength: 20
-        },
-        birth_date: {
+        manufacture_year: {
             type: String
+        },
+        number_plate: {
+            type: String,
+            maxlength: 9
+        },
+        technical_licence: {
+            type: String,
+            maxlength: 9
+        },
+        car_type: {
+            type: String
+        },
+        car_image: {
+            type: String
+        },
+        color: {
+            type: String,
+            maxlength: 100
         }
     },
     {
@@ -30,5 +44,3 @@ const DriverSchema = mongoose.Schema(
         toJSON: { virtuals: true },
     }
 );
-
-module.exports = mongoose.model("DriverApp", DriverSchema);
