@@ -1,0 +1,321 @@
+definitions:
+  http.Response:
+    properties:
+      data: {}
+      description:
+        type: string
+      status:
+        type: string
+    type: object
+  models.CarRequest:
+    properties:
+      car_image:
+        type: string
+      car_model:
+        type: string
+      car_type:
+        type: string
+      color:
+        type: string
+      driver_id:
+        type: string
+      manufacture_year:
+        type: string
+      number_plate:
+        type: string
+      technical_licence:
+        type: string
+    type: object
+  models.CarResponse:
+    properties:
+      car_image:
+        type: string
+      car_model:
+        type: string
+      car_type:
+        type: string
+      color:
+        type: string
+      driver_id:
+        type: string
+      id:
+        type: string
+      manufacture_year:
+        type: string
+      number_plate:
+        type: string
+      technical_licence:
+        type: string
+    type: object
+  models.DriverRequest:
+    properties:
+      birth_date:
+        type: string
+      first_name:
+        type: string
+      last_name:
+        type: string
+      phone_number:
+        type: string
+    type: object
+  models.DriverResponse:
+    properties:
+      birth_date:
+        type: string
+      first_name:
+        type: string
+      id:
+        type: string
+      last_name:
+        type: string
+      phone_number:
+        type: string
+    type: object
+info:
+  contact: {}
+  description: This is a api-gateway
+  termsOfService: https://murtazoxon.uz
+paths:
+  /ping:
+    get:
+      consumes:
+      - application/json
+      description: this returns "pong" messsage to show service is working
+      operationId: ping
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Response data
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  type: string
+              type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/http.Response'
+      summary: returns "pong" message
+  /v1/driver:
+    post:
+      consumes:
+      - application/json
+      description: Create driver info
+      operationId: create_driver
+      parameters:
+      - description: CreateDriverRequestBody
+        in: body
+        name: driver
+        required: true
+        schema:
+          $ref: '#/definitions/models.DriverRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Driver data
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/models.DriverResponse'
+              type: object
+        "400":
+          description: Bad Request
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  type: string
+              type: object
+        "500":
+          description: Server Error
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Create driver
+      tags:
+      - Driver
+    put:
+      consumes:
+      - application/json
+      description: Update driver info
+      operationId: update_driver
+      parameters:
+      - description: UpdateDriverRequestBody
+        in: body
+        name: driver
+        required: true
+        schema:
+          $ref: '#/definitions/models.DriverResponse'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Driver data
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/models.DriverResponse'
+              type: object
+        "400":
+          description: Bad Request
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  type: string
+              type: object
+        "500":
+          description: Server Error
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Update driver
+      tags:
+      - Driver
+  /v1/driver/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Get driver info
+      operationId: get_driver
+      parameters:
+      - description: driver_id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Driver data
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/models.DriverResponse'
+              type: object
+        "400":
+          description: Invalid Argument
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  type: string
+              type: object
+        "500":
+          description: Server Error
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Get driver
+      tags:
+      - Driver
+    get:
+      consumes:
+      - application/json
+      description: Get driver info
+      operationId: delete_driver
+      parameters:
+      - description: driver_id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+        "400":
+          description: Invalid Argument
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  type: string
+              type: object
+        "500":
+          description: Server Error
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Get driver
+      tags:
+      - Driver
+  /v1/driver/car:
+    post:
+      consumes:
+      - application/json
+      description: Create car info
+      operationId: create_car
+      parameters:
+      - description: CreateCarRequestBody
+        in: body
+        name: car
+        required: true
+        schema:
+          $ref: '#/definitions/models.CarRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Car data
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/models.CarResponse'
+              type: object
+        "400":
+          description: Bad Request
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  type: string
+              type: object
+        "500":
+          description: Server Error
+          schema:
+            allOf:
+            - $ref: '#/definitions/http.Response'
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Create Car
+      tags:
+      - Driver Car
+swagger: "2.0"
