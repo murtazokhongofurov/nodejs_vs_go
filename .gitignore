@@ -1,4 +1,0 @@
-go_api_gateway/vendor/
-go_api_gateway/.env
-node_driver_service/node_modules
-node_driver_service/.env
