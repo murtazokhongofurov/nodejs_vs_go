@@ -8,8 +8,7 @@ let mongoDBURL = //`mongodb://node_driver_service:password@localhost:27017/mongo
     ":" + cfg.mongoPassword + 
     "@" + cfg.mongoHost +
     ":" + cfg.mongoPort + 
-    "/" + 
-    cfg.mongoDatabase;
+    "/" + cfg.mongoDatabase;
 
 mongoose.set ('strictQuery', true);
 mongoose.connect(
@@ -21,9 +20,9 @@ mongoose.connect(
     (err) => {
         if (err) {
             console.log("Error while connecting to database (" + 
-            mongoDBUrl + ") "+ err.message);
+            mongoDBURL + ") "+ err.message);
             logger.error("Error while connecting to database (" + 
-            mongoDBUrl + ") "+ err.message);
+            mongoDBURL + ") "+ err.message);
         }
 
         logger.info("Connected to mongoDB")

@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.udevs.io:medion/driver_service.git"
+    "url": "git@github.com:murtazokhongofurov/nodejs_vs_go.git"
   },
   "author": "",
   "license": "ISC",
@@ -23,14 +23,14 @@
     "bcrypt": "^5.1.0",
     "date-fns": "^2.29.2",
     "dotenv": "^16.0.1",
-    "eta": "^1.12.3",
+    "eta": "^2.0.1",
     "fs": "^0.0.1-security",
     "hot-formula-parser": "^4.0.0",
-    "html-pdf": "^3.0.1",
+    "html-pdf": "^1.5.0",
     "i": "^0.3.7",
     "iconv-lite": "^0.6.3",
     "kafkajs": "^2.1.0",
-    "minio": "^7.0.32",
+    "minio": "^0.2.9",
     "mongoose": "^6.3.0",
     "node-cron": "^3.0.2",
     "nodemon": "^2.0.16",

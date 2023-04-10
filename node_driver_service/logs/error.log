@@ -1,0 +1,7 @@
+{
+  message: 'Error while connecting to database (mongodb://developer:2002@localhost:27017/mongo_driver_db) Authentication failed.',
+  level: 'error',
+  timestamp: '2023-04-10T04:11:09.869Z',
+  label: 'driver_service',
+  metadata: {}
+}

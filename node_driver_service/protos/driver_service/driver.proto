@@ -6,7 +6,6 @@ option go_package="genproto/driver_service";
 
 import "google/protobuf/empty.proto";
 
-
 service DriverService {
     rpc Create(DriverRequest) returns (DriverResponse) {}
     rpc Update(DriverResponse) returns (DriverResponse) {}

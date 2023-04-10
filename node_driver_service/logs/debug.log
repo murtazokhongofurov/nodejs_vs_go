@@ -1,0 +1,35 @@
+{
+  message: 'grpc server is running at 2001',
+  level: 'info',
+  timestamp: '2023-04-10T04:07:10.511Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'grpc server is running at 2001',
+  level: 'info',
+  timestamp: '2023-04-10T04:08:33.874Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'grpc server is running at 2001',
+  level: 'info',
+  timestamp: '2023-04-10T04:11:09.852Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'Error while connecting to database (mongodb://developer:2002@localhost:27017/mongo_driver_db) Authentication failed.',
+  level: 'error',
+  timestamp: '2023-04-10T04:11:09.869Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'Connected to mongoDB',
+  level: 'info',
+  timestamp: '2023-04-10T04:11:09.869Z',
+  label: 'driver_service',
+  metadata: {}
+}
