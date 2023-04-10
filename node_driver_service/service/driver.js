@@ -9,4 +9,4 @@ const driverService = {
     Delete: catchWrapService(`service.driver.delete`, driverStore.delete)
 }
 
-module.exports = driverService;
+module.exports = driverService; 

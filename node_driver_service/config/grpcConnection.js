@@ -6,9 +6,7 @@ const log = require('./logger')
 
 const driverService = require("../service/driver");
 const carService = require("../service/car");
-
-
-const PROTO_URL = __dirname + "/../protos/driver_service/driver.proto";
+const PROTO_URL = __dirname + "/../protos/driver_service/driver_service.proto";
 const packageDefinition = protoLoader.loadSync(PROTO_URL, {
     keepCase: true,
     longs: String,
