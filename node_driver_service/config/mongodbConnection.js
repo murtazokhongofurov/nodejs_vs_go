@@ -2,7 +2,7 @@ const cfg = require("./index");
 const mongoose = require("mongoose");
 const logger = require("./logger");
 
-let mongoDBURL = //`mongodb://node_driver_service:password@localhost:27017/mongo_driver_database_name`
+let mongoDBURL = 
     "mongodb://" + 
     cfg.mongoUser + 
     ":" + cfg.mongoPassword + 
@@ -28,3 +28,4 @@ mongoose.connect(
         logger.info("Connected to mongoDB")
     }
 );
+console.log(mongoDBURL)
