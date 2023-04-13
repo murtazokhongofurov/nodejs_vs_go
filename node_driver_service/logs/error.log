@@ -5,3 +5,45 @@
   label: 'driver_service',
   metadata: {}
 }
+{
+  message: 'Error while connecting to database (mongodb://developer:2002@localhost:27017/mongo_driver_db) Authentication failed.',
+  level: 'error',
+  timestamp: '2023-04-10T11:33:59.083Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'Error while connecting to database (mongodb://developer:2002@localhost:27017/mongo_driver_db) Authentication failed.',
+  level: 'error',
+  timestamp: '2023-04-13T04:36:46.298Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'Error while connecting to database (mongodb://developer:2002@localhost:27017/mongo_driver_db) Authentication failed.',
+  level: 'error',
+  timestamp: '2023-04-13T04:40:24.774Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'service.driver.create: failed with error: Operation `driverapps.insertOne()` buffering timed out after 10000ms',
+  level: 'error',
+  timestamp: '2023-04-13T04:49:22.557Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'service.driver.create: failed with error: Operation `driverapps.insertOne()` buffering timed out after 10000ms',
+  level: 'error',
+  timestamp: '2023-04-13T04:52:33.804Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'service.driver.create: failed with error: Operation `driverapps.insertOne()` buffering timed out after 10000ms',
+  level: 'error',
+  timestamp: '2023-04-13T04:53:38.928Z',
+  label: 'driver_service',
+  metadata: {}
+}

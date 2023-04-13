@@ -30,7 +30,7 @@ func (h *Handler) handleResponse(c *gin.Context, status http.Status, data interf
 			logger.Int("code", status.Code),
 			logger.String("status", status.Status),
 			logger.Any("description", status.Description),
-			// logger.Any("data", data),
+			logger.Any("data", data),
 		)
 	case code < 400:
 		h.log.Warn(

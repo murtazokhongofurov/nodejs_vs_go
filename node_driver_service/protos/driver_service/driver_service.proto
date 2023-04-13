@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+package driver_service;
+
+import "car.proto";
+import "driver.proto";

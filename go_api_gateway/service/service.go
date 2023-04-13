@@ -19,7 +19,7 @@ type grpcClients struct {
 
 func NewGrpcClients(cfg config.Config) (ServiceManagerI, error) {
 	connDriverService, err := grpc.Dial(
-		cfg.DriverServiceHost + cfg.DriverServicePort,
+		cfg.DriverServiceHost +":"+ cfg.DriverServicePort,
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
 	)
 	if err != nil {

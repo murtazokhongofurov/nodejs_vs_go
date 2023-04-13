@@ -33,3 +33,129 @@
   label: 'driver_service',
   metadata: {}
 }
+{
+  message: 'grpc server is running at 2001',
+  level: 'info',
+  timestamp: '2023-04-10T11:33:59.062Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'Error while connecting to database (mongodb://developer:2002@localhost:27017/mongo_driver_db) Authentication failed.',
+  level: 'error',
+  timestamp: '2023-04-10T11:33:59.083Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'Connected to mongoDB',
+  level: 'info',
+  timestamp: '2023-04-10T11:33:59.083Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'grpc server is running at 2001',
+  level: 'info',
+  timestamp: '2023-04-13T04:36:46.254Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'Error while connecting to database (mongodb://developer:2002@localhost:27017/mongo_driver_db) Authentication failed.',
+  level: 'error',
+  timestamp: '2023-04-13T04:36:46.298Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'Connected to mongoDB',
+  level: 'info',
+  timestamp: '2023-04-13T04:36:46.299Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'grpc server is running at 2001',
+  level: 'info',
+  timestamp: '2023-04-13T04:40:24.755Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'Error while connecting to database (mongodb://developer:2002@localhost:27017/mongo_driver_db) Authentication failed.',
+  level: 'error',
+  timestamp: '2023-04-13T04:40:24.774Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'Connected to mongoDB',
+  level: 'info',
+  timestamp: '2023-04-13T04:40:24.775Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'service.driver.create: requested - {"first_name":"Hokim","last_name":"Nosirov","phone_number":"+998908907865","birth_date":"20.09.2000"}',
+  level: 'info',
+  timestamp: '2023-04-13T04:49:12.520Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'storage.driver.create: requested, {"first_name":"Hokim","last_name":"Nosirov","phone_number":"+998908907865","birth_date":"20.09.2000"}',
+  level: 'debug',
+  timestamp: '2023-04-13T04:49:12.523Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'service.driver.create: failed with error: Operation `driverapps.insertOne()` buffering timed out after 10000ms',
+  level: 'error',
+  timestamp: '2023-04-13T04:49:22.557Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'service.driver.create: requested - {"first_name":"Hokim","last_name":"Nosirov","phone_number":"+998908907865","birth_date":"20.09.2000"}',
+  level: 'info',
+  timestamp: '2023-04-13T04:52:23.754Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'storage.driver.create: requested, {"first_name":"Hokim","last_name":"Nosirov","phone_number":"+998908907865","birth_date":"20.09.2000"}',
+  level: 'debug',
+  timestamp: '2023-04-13T04:52:23.765Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'service.driver.create: failed with error: Operation `driverapps.insertOne()` buffering timed out after 10000ms',
+  level: 'error',
+  timestamp: '2023-04-13T04:52:33.804Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'service.driver.create: requested - {"first_name":"Hokim","last_name":"Nosirov","phone_number":"+998908907865","birth_date":"20.09.2000"}',
+  level: 'info',
+  timestamp: '2023-04-13T04:53:28.900Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'storage.driver.create: requested, {"first_name":"Hokim","last_name":"Nosirov","phone_number":"+998908907865","birth_date":"20.09.2000"}',
+  level: 'debug',
+  timestamp: '2023-04-13T04:53:28.903Z',
+  label: 'driver_service',
+  metadata: {}
+}
+{
+  message: 'service.driver.create: failed with error: Operation `driverapps.insertOne()` buffering timed out after 10000ms',
+  level: 'error',
+  timestamp: '2023-04-13T04:53:38.928Z',
+  label: 'driver_service',
+  metadata: {}
+}
